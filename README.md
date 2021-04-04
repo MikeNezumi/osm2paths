@@ -1,4 +1,4 @@
-osm2tracks generates car tracks of any small OSM road network, intended to be used in simple traffic simulations.
+osm2paths generates car tracks of any small OSM road network, intended to be used in simple traffic simulations.
 It converts an exported OSM file (eg. map.osm) to a JSON dictionary defining the road network (crossroads and connections),
 and car tracks (directed traces on commonplace two-way streets).
 
