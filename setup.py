@@ -13,7 +13,7 @@ setup(
   version='0.0.1',
   description='An automtic generator of JSON vector road network graph car tracks from OSM',
   long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
-  url='',
+  url='https://github.com/MikeNezumi/osm2tracks',
   author='MikeFreeman',
   author_email='michaelsvoboda42@gmail.com',
   license='MIT',
