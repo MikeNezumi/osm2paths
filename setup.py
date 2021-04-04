@@ -11,7 +11,7 @@ classifiers = [
 setup(
   name='osm2tracks',
   version='0.0.1',
-  description='An automtic generator of JSON vector road network graph car tracks from OSM',
+  description='An automatic generator of JSON vector road network graph car tracks from OSM',
   long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
   url='https://github.com/MikeNezumi/osm2tracks',
   author='MikeFreeman',

@@ -14,7 +14,7 @@ from scripts.read_json import get_dict
 from scripts.render_json import graph_lines, rails_lines
 from scripts.write_json import replicate_json, insert_rails
 
-def generate_rails(osm_path, half_gauge = 2, max_radius = 4.5, drive_right = True, display = True):
+def generate_rails(osm_path, half_gauge = 2, min_radius = 4.5, drive_right = True, display = True):
     """
     Integrates all components of the generator, from .osm file to .JSON with rails,
     optionally displays OpenGL lines of these rails in a system window
@@ -32,7 +32,7 @@ def generate_rails(osm_path, half_gauge = 2, max_radius = 4.5, drive_right = Tru
         json.dump(roads_JSON, json_file)
         print("Wrote graph in " + osm_path[:-3] + "json")
 
-    insert_rails(osm_path[:-3] + "json", half_gauge, False, max_radius)
+    insert_rails(osm_path[:-3] + "json", half_gauge, False, min_radius)
     print("\nInserted tracks into " + osm_path)
 
     # display window
