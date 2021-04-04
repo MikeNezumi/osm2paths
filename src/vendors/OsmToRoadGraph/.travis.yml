@@ -1,0 +1,14 @@
+language: python
+python:
+  - "pypy3"
+  - "3.6"
+# command to install dependencies
+install:
+  - pip install codecov
+  - pip install pytest
+  - pip install pytest-cov
+  - pip install networkx
+# command to run tests
+script: 
+  - pytest --verbosity=3 --cov=./
+  - codecov
