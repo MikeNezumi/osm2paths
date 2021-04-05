@@ -8,7 +8,7 @@ Bézier curve - it generates 'vector' paths.
 =========== USAGE =============
 
 1, place an .osm file inside data folder
-2, call generate_rails() to create a .json files, arguments:
+2, call generate_rails() to create a .json files, arguments
 
 osm_path (string, required): path to source OSM file (eg. "data/map.osm")
 half_gauge (float, default = 2): distance between road's central line and tracks in meters

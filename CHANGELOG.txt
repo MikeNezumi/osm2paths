@@ -1,6 +1,6 @@
 Change Log
 =====================
 
-0.0.1 (4/4/2021)
+0.0.3 (4/4/2021)
 ----------------------
-First, unstable release
+Unstable release (only PYPI bugfixes)

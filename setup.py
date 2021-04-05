@@ -9,16 +9,24 @@ classifiers = [
 ]
 
 setup(
-  name='osm2tracks',
-  version='0.0.2',
+  name='osm2paths',
+  version='0.0.11',
   description='An automatic generator of JSON vector road network graph car tracks from OSM',
+  long_description=open('README.md').read(),
   url='https://github.com/MikeNezumi/osm2tracks',
   author='MikeFreeman',
   author_email='michaelsvoboda42@gmail.com',
   license='MIT',
   classifiers=classifiers,
   keywords='json, traffic, simulation, data graphs, osm',
+  py_modules=['osm2paths'],
   package_dir={'':'src'},
-  py_modules=["osm2tracks"],
-  install_requires=['utm', 'json', 'pyglet', 'subprocess', 'pythematics']
+  packages=find_packages(where='src'),
+  package_data={'src':['data/*.txt']},
+  include_package_data=True,
+  install_requires=[
+    'utm==0.7.0',
+    'pyglet==1.5.15',
+    'pythematics==4.0.0'
+  ]
 )
